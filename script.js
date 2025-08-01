@@ -239,3 +239,72 @@ document.addEventListener('DOMContentLoaded', function() {
 //       leftArrow.click();
 //     }
 //   });
+
+document.addEventListener("DOMContentLoaded", function () {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImage");
+            const closeBtn = document.querySelector(".close");
+            const images = document.querySelectorAll(".gallery-item img");
+            const leftArrow = document.querySelector(".gallery-left");
+            const rightArrow = document.querySelector(".gallery-right");
+
+            let currentIndex = 0;
+
+            function showImage(index) {
+                modalImg.src = images[index].src;
+                modal.style.display = "block";
+                currentIndex = index;
+            }
+
+            images.forEach((img, index) => {
+                img.addEventListener("click", function () {
+                    showImage(index);
+                });
+            });
+
+            closeBtn.onclick = function () {
+                modal.style.display = "none";
+            };
+
+            leftArrow.onclick = function () {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                showImage(currentIndex);
+            };
+
+            rightArrow.onclick = function () {
+                currentIndex = (currentIndex + 1) % images.length;
+                showImage(currentIndex);
+            };
+
+            window.onclick = function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            };
+
+            document.addEventListener("keydown", function (e) {
+                if (modal.style.display === "block") {
+                    if (e.key === "ArrowLeft") leftArrow.click();
+                    if (e.key === "ArrowRight") rightArrow.click();
+                    if (e.key === "Escape") closeBtn.click();
+                }
+            });
+
+            // Touch swipe support
+            let startX = 0;
+
+            modalImg.addEventListener("touchstart", function (e) {
+                startX = e.touches[0].clientX;
+            });
+
+            modalImg.addEventListener("touchend", function (e) {
+                const endX = e.changedTouches[0].clientX;
+                const diff = startX - endX;
+
+                if (diff > 50) {
+                    rightArrow.click();
+                } else if (diff < -50) {
+                    leftArrow.click();
+                }
+            });
+        });
