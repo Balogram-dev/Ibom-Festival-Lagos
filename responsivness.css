@@ -1,0 +1,1447 @@
+/* ==========================================================================
+   Responsive Styles - Mobile First Approach
+   ========================================================================== */
+
+/* Base styles are in style.css for devices 1200px and above */
+
+/* Large Desktop Breakpoint (up to 1200px)
+   Adjusts spacing and sizes for large desktop screens while maintaining layout integrity
+   ========================================================================== */
+@media screen and (max-width: 1200px) {
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+        max-width: 500px;
+        margin: 0 auto 30px;
+    }
+
+    /* Adjust section and header spacing */
+    section {
+        padding: 40px 5%;
+    }
+
+    header {
+        padding: 15px 5%;
+    }
+
+    /* Scale down hero section typography */
+    .hero-content h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+        max-width: 500px;
+        margin: 0 auto 30px;
+    }
+
+    /* Adjust gallery layout */
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    /* Optimize vendor section layout */
+    .vendor-content {
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+
+    /* Adjust community section spacing */
+    .community-section {
+        padding: 100px 5%;
+    }
+
+
+
+    .footer-logo p {
+    margin: 0 auto 20px;
+    max-width: 400px;
+    }
+}
+
+/* Tablet Landscape Breakpoint (up to 992px)
+   Reorganizes layouts for better readability on tablet devices in landscape mode
+   - Switches to single column layouts
+   - Adjusts content ordering for better visual hierarchy
+   - Centers text and elements for improved balance
+   ========================================================================== */
+   @media screen and (max-width: 992px) {
+    /* Stack about and vendor sections */
+  .about-content,
+  .vendor-content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 5%;
+  }
+
+  .vendor-content {
+    max-width: 1000px;
+    padding: 0 20px;
+  }
+
+  .vendor-image {
+    order: 1;
+    position: relative;
+  }
+
+  .vendor-button {
+    order: 2;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 24px;
+    font-size: 0.95rem;
+    text-align: center;
+    background-color: #006400;
+  }
+
+  .about-text-top {
+    position: relative;
+    top: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .green-text,
+  .orange-text {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .about-text,
+  .vendor-text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .about-text p,
+  .vendor-text p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-size: 1.2rem;
+  }
+
+  .about-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* Adjust section and header spacing */
+  section {
+    padding: 40px 5%;
+  }
+
+  header {
+    padding: 15px 5%;
+  }
+
+  /* Adjust gallery layout */
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  /* Adjust community section spacing */
+  .community-section {
+    padding: 100px 5%;
+  }
+
+  .community-section p {
+    font-size: 1.2rem;
+  }
+
+  .footer-logo p {
+    margin: 0 auto 20px;
+    max-width: 400px;
+    font-size: 1.2rem;
+  }
+    /* Reorganize hero section for better mobile viewing */
+   
+
+    /* Stack about and vendor sections */
+    .vendor-section {
+        padding: 40px 5%;
+    }
+
+    .vendor-content {
+        padding: 0;
+        gap: 32px;
+    }
+
+    .vendor-image {
+        flex: 1;
+        order: 2;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .intro-text p {
+        font-size: 1.5rem;
+    }
+
+    .vendor-image img {
+        top: 0;
+        bottom: 0;
+    }
+
+    .vendor-text {
+        flex: 1;
+        order: 1;
+        padding-right: 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .vendor-text h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+
+    .green-vendortext,
+    .orange-vendortext {
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .vendor-text .orange-text {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .vendor-text .intro-text,
+    .vendor-text p {
+        font-size: 1.5rem;
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto 15px;
+    }
+
+    .vendor-button {
+        position: static;
+        background-color: #006400;
+        color: white;
+        margin: 20px auto;
+    }
+
+    .criteria-title {
+        display: block;
+        text-align: center;
+        margin: 15px auto;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .about-content,
+    .vendor-content {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px 5%;
+    }
+
+    .vendor-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        order: 1;
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .vendor-button {
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .register-section {
+        padding: 60px 5%;
+        min-height: auto;
+    }
+
+    .register-section h2 {
+        font-size: 6rem;
+        margin-bottom: 30px;
+    }
+
+    .register-section p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    /* About section mobile adjustments */
+    .about-text-top {
+        position: relative;
+        top: 0;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .green-text,
+    .orange-text {
+        text-align: center;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Center text in about and vendor sections */
+    .about-text,
+    .vendor-text {
+        text-align: center;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .about-text p,
+    .vendor-text p {
+        max-width: 600px;
+        margin: 0 auto 20px;
+        font-size: 1.5rem;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .about-section {
+        padding: 10px 5%;
+    }
+
+    .about-text-top {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .about-content {
+        gap: 10px;
+    }
+
+    .about-text p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .green-text,
+    .orange-text {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+
+    .footer-logo p {
+        margin: 0 auto 20px;
+        max-width: 400px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile Breakpoint (up to 768px)
+   Optimizes layout and typography for mobile devices
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+
+    /* Global button styles for mobile */
+    .cta-button,
+    .secondary-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        width: 100%;
+        max-width: 260px;
+        margin: 10px 0;
+        text-align: center;
+        display: block;
+    } 
+
+    /* Button hover/active states */
+    .cta-button:hover,
+    .cta-button:active {
+        background-color: #e67e00;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(255, 138, 0, 0.4);
+    }
+
+    .secondary-button:hover,
+    .secondary-button:active {
+        background-color: #e67e00;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 100, 0, 0.4);
+    }
+
+    /* Register section mobile adjustments */
+    .register-section {
+        padding: 60px 5%;
+        min-height: auto;
+    }
+
+    .register-section h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .register-section p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .hero-wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .hero-wave img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin-bottom: -15px;
+    }
+
+    /* .register-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+    } */
+
+    /* Register buttons specific styles
+    .register-buttons .cta-button {
+        background-color: #000;
+        color: #FFF8E1;
+    }
+
+    .register-buttons .cta-button:hover {
+        background-color: #004d00;
+    }
+
+    .register-buttons .secondary-button {
+        background-color: #FFF8E1;
+        color: #000;
+        border: 1px solid #000;
+    }
+
+    .register-buttons .secondary-button:hover {
+        background-color: #004d00;
+        color: white;
+    } */
+
+    /* Vendor button styles */
+    .vendor-button {
+        position: static;
+        background-color: #006400;
+        color: white;
+        margin: 20px auto;
+    }
+
+    .vendor-button:hover,
+    .vendor-button:active {
+        background-color: #FF8A00;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(255, 138, 0, 0.3);
+    }
+
+    /* Important note and criteria styles */
+    .important-note {
+        margin-top: 30px;
+    }
+
+    .important-note h3 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+
+    .criteria-title {
+        display: block;
+        text-align: center;
+        margin: 15px auto;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+
+    .closing-text {
+        font-size: 0.9rem;
+        margin-top: 15px;
+    }
+
+    /* WhatsApp button mobile adjustments */
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    /* Vendor section mobile adjustments */
+    .vendor-section {
+        padding: 40px 5%;
+    }
+
+    .vendor-content {
+        padding: 0;
+        gap: 32px;
+    }
+
+    .vendor-image {
+        flex: 1;
+        order: 2;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .vendor-image img {
+        top: 0;
+        bottom: 0;
+    }
+
+    .vendor-text {
+        flex: 1;
+        order: 1;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .vendor-text h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+
+    .green-vendortext,
+    .orange-vendortext {
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .vendor-text .orange-text {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .vendor-text .intro-text,
+    .vendor-text p {
+        font-size: 0.95rem;
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto 15px;
+    }
+
+    .about-section {
+        padding: 10px 5%;
+    }
+
+    .about-text-top {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .about-content {
+        gap: 10px;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .about-image {
+        max-width: 200px;
+    }
+
+    .green-text,
+    .orange-text {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+
+    /* Maintain left alignment for vendor list items */
+    .vendor-criteria li {
+        text-align: left;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Adjust important note section */
+    .important-note {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    /* Stack footer content */
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px 5%;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .footer-logo p {
+        margin: 0 auto 20px;
+        max-width: 400px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Adjust register section */
+    .register-section {
+        padding: 80px 5%;
+    }
+
+    .register-section h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Mobile Navigation Styles (up to 768px)
+   Implements hamburger menu and mobile-friendly navigation
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+
+    /* Global container and spacing */
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    section {
+        padding: 40px 5%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    header {
+        padding: 15px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Typography */
+    /* h2 {
+        font-size: 1.75rem;
+        margin-bottom: 12px;
+        letter-spacing: -0.5px;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+    } */
+
+    /* Logo and Navigation */
+    .logo {
+        font-size: 1.4rem;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .logo img {
+        max-width: 120px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hamburger {
+        display: flex;
+        align-self: flex-end;
+        margin-top: -75px;
+        padding: 0;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        width: 90%;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        flex-direction: column;
+        background-color: #FFF8E1;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+        z-index: 99;
+        gap: 10px;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 4px 0;
+        width: 100%;
+    }
+
+    .nav-menu li a {
+        font-size: 0.95rem;
+        padding: 10px 16px;
+        display: block;
+        width: 100%;
+    }
+
+    .nav-menu li a:hover {
+        background-color: rgba(255, 138, 0, 0.15);
+    }
+
+
+    /* Hero section styles */
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        min-height: 90vh;
+        padding: 70px 5% 30px;
+        gap: 25px;
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .hero-content {
+        order: 2;
+        max-width: 100%;
+        padding: 0;
+        z-index: 2;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+        line-height: 1.1;
+        letter-spacing: -1px;
+        margin-bottom: 15px;
+    }
+
+    .hero-content p,
+    .event-description {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .host-info {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-image {
+        order: 1;
+        max-width: 90%;
+        margin: 0 auto;
+        z-index: 2;
+    }
+
+    .hero-image img {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .hero-top-img {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Adjust gallery for single column */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 0 5%;
+    }
+
+    /* Optimize vendor section */
+    .vendor-criteria li {
+        font-size: 0.95rem;
+        padding: 8px 0;
+    }
+
+    .important-note {
+        padding: 15px;
+        margin: 30px auto;
+        font-size: 0.9rem;
+    }
+
+    /* Adjust register section */
+    .register-section {
+        padding: 60px 5%;
+    }
+
+    .register-section h2 {
+        font-size: 2.2rem;
+    }
+
+    /* .register-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+        max-width: 260px;
+    }
+
+    .register-buttons .cta-button {
+        background-color: #004d00;
+        color: #FFF8E1;
+        max-width: 260px;
+        height: 54px;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 1rem;
+        border: 2px solid #004d00;
+        transition: all 0.3s ease;
+        margin-right: 15px;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .register-buttons .cta-button:hover {
+        background-color: #FF8A00;
+        color: #000;
+        border: 2px solid #000;
+    }
+
+    .register-buttons .secondary-button {
+        background-color: #FFF8E1;
+        color: #004d00;
+        max-width: 260px;
+        height: 54px;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 1rem;
+        border: 2px solid #004d00;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .register-buttons .secondary-button:hover {
+        background-color: #FF8A00;
+        color: #000;
+        border: 2px solid #000;
+    }
+
+    .cta-button:hover,
+    .cta-button:active,
+    .secondary-button:hover,
+    .secondary-button:active {
+        transform: translateY(-2px);
+    } */
+
+    /* .register-buttons button {
+        max-width: 260px;
+        padding: 12px 18px;
+        font-size: 1rem;
+    } */
+
+    /* Optimize community section */
+    .community-section {
+        padding: 60px 5%;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0 5%;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+    /* Adjust footer */
+    .footer-content {
+        gap: 30px;
+        padding: 15px 5%;
+    }
+
+    .footer-logo p {
+        font-size: 0.9rem;
+        justify-content: center;
+    }
+
+    /* Enhanced mobile navigation for very small screens */
+    .nav-menu {
+        top: 65px;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    header {
+        padding: 10px 5%;
+    }
+}
+
+/* Small Mobile Breakpoint (up to 480px)
+   Optimizes layout for mobile phones
+   ========================================================================== */
+@media screen and (max-width: 480px) {
+
+    /* Global typography and spacing */
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 0;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+
+    h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    /* Header and navigation */
+    header {
+        padding: 15px 5%;
+    }
+
+    .logo img {
+        max-width: 120px;
+        padding: 0 5%;
+    }
+
+    nav ul {
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li a {
+        padding: 10px 0;
+    }
+
+    .nav-menu {
+        top: 60px;
+        padding: 16px 0;
+    }
+
+    .nav-menu li a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    /* Hero section adjustments */
+    .hero-section {
+        padding: 40px 5% 0;
+        min-height: 85vh;
+    }
+
+    .hero-content h1 {
+        font-size: 1.9rem;
+        line-height: 1.1;
+        margin-bottom: 12px;
+        letter-spacing: -0.5px;
+    }
+
+    .hero-content p,
+    .event-description {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: 18px;
+    }
+
+    .host-info {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+
+    .hero-image img {
+        max-width: 85%;
+    }
+
+    .hero-top-img {
+        top: 60px;
+    }
+
+    .hero-buttons {
+        gap: 10px;
+    }
+
+    /* Button styles */
+    /* .cta-button,
+    .secondary-button,
+    .register-buttons button {
+        max-width: 240px;
+        padding: 10px 14px;
+        font-size: 0.95rem;
+    } */
+
+    /* Form elements */
+    .newsletter-form {
+        padding: 0 5%;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Vendor section */
+    .vendor-criteria li {
+        padding: 6px 12px 6px 20px;
+        font-size: 0.95rem;
+    }
+
+    /* Image optimization */
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Wave decoration */
+    .hero-wave img {
+        margin-bottom: -10px;
+    }
+}
+
+/* Tablet Portrait and Large Mobile Breakpoint (up to 768px)
+   Optimizes layout and interaction elements for touch devices
+   - Enlarges touch targets
+   - Simplifies navigation
+   - Adjusts form elements for better usability
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+
+    /* Adjust global typography */
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    /* Enhanced hero section for mobile */
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        min-height: 100vh;
+        padding: 80px 5% 40px;
+        gap: 30px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-content {
+        order: 2;
+        max-width: 100%;
+        padding: 20px 5%;
+        margin-top: 0;
+    }
+
+    .hero-image {
+        order: 1;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        max-width: 70%;
+        height: auto;
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 0;
+    }
+
+    .hero-top-img {
+        top: 80px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .host-info {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .event-description {
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .cta-button,
+    .secondary-button {
+        width: 100%;
+        max-width: 280px;
+        margin: 0;
+        padding: 14px 20px;
+        font-size: 1.1rem;
+    }
+
+    /* Adjust gallery layout for better mobile viewing */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 0 5%;
+    }
+
+    /* Stack register section buttons */
+    /* .register-buttons {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 5%;
+    }
+
+    .cta-button,
+    .secondary-button {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+        padding: 12px 16px;
+        font-size: 1rem;
+    } */
+
+    /* .register-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+      }
+    
+    .register-buttons .cta-button {
+        background-color: #004d00;
+        color: #FFF8E1;
+        width: 180px;
+        height: 54px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1rem;
+        border: 2px solid #004d00;
+        transition: all 0.3s ease;
+        margin-right: 15px;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      .register-buttons .cta-button:hover {
+        background-color: #FF8A00;
+        color: #000;
+        border: 2px solid #000;
+      }
+      .register-buttons .secondary-button {
+        background-color: #FFF8E1;
+        color: #004d00;
+        width: 180px;
+        height: 54px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1rem;
+        border: 2px solid #004d00;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+        z-index: 10;
+      }
+      .register-buttons .secondary-button:hover {
+        background-color: #FF8A00;
+        color: #000;
+        border: 2px solid #000;
+      }
+      .cta-button:hover, .cta-button:active, .secondary-button:hover, .secondary-button:active {
+        transform: translateY(-2px);
+      } */
+
+
+      .register-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+ 
+    .register-buttons .cta-button {
+        width: 100%;
+        max-width: 280px;
+        margin: 0;
+        padding: 14px 94px;
+        font-size: 1.1rem;
+    }
+
+    .register-buttons .secondary-button {
+        width: 100%;
+        max-width: 280px;
+        margin: 0;
+        padding: 14px 89px;
+        font-size: 1.1rem;
+    }
+
+
+    /* Optimize newsletter form for mobile */
+    .newsletter-form {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0 5%;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        border-radius: 8px;
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    /* Stack footer links */
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding: 0 5%;
+    }
+
+    /* #ft-logo {
+        text-align: center;
+    } */
+    /* Adjust header layout */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 5%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Optimize navigation */
+    nav ul {
+        gap: 20px;
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+        padding: 5px 10px;
+    }
+}
+
+/* Mobile Breakpoint (up to 576px)
+   Ensures optimal viewing and interaction on small mobile devices
+   - Maximizes content readability
+   - Simplifies layouts to single columns
+   - Adjusts font sizes for better legibility
+   ========================================================================== */
+@media screen and (max-width: 576px) {
+
+    /* Further reduce typography for smallest screens */
+    .hero-content h1 {
+        font-size: 2.2rem;
+        letter-spacing: -0.5px;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    /* Adjust section spacing */
+    section {
+        padding: 40px 5%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Single column gallery */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 5%;
+    }
+
+    /* Adjust register section */
+    .register-section {
+        padding: 60px 5%;
+    }
+
+    .register-section h2 {
+        font-size: 2.2rem;
+        letter-spacing: -.5px;
+    }
+
+    .register-arrow i {
+        font-size: 2.5rem;
+    }
+
+    /* Optimize navigation for smallest screens */
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 4px 8px;
+    }
+
+    /* Adjust community section */
+    .community-section {
+        padding: 60px 5%;
+    }
+
+    .community-section h2 {
+        font-size: 2.2rem;
+        letter-spacing: -0.5px;
+    }
+
+    .newsletter-form {
+        padding: 0 5%;
+    }
+}
+
+/* Mobile Navigation Styles (up to 768px)
+   Enhances navigation usability on mobile devices
+   - Full-width navigation
+   - Optimized spacing for touch targets
+   - Improved menu item distribution
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+}
+
+/* Global Mobile Fixes
+   Ensures no horizontal scrolling and proper spacing across all breakpoints
+   ========================================================================== */
+@media screen and (max-width: 1200px) {
+
+    /* Prevent horizontal overflow */
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    /* Ensure all containers respect viewport width */
+    .container,
+    section,
+    header,
+    footer,
+    .hero-section,
+    .about-section,
+    .vendor-section,
+    .gallery-section,
+    .register-section,
+    .community-section {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Ensure all interactive elements have sufficient touch targets */
+    button,
+    a,
+    input,
+    .nav-menu li a,
+    .cta-button,
+    .secondary-button {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        justify-content: center;
+    }
+
+}
