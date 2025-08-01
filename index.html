@@ -5,17 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IBOM Festival Lagos - Cultural Music & Arts Festival</title>
-    <meta name="description" content="Experience the vibrant fusion of Akwa Ibom and Lagos culture at Ibom Fest Music Lagos. Join us for live performances, traditional music, workshops, and cultural celebrations this September 2023.">
-    <meta name="keywords" content="Ibom Fest Music Lagos, Akwa Ibom Music Festival, Ibom Festival Music Lagos, Musical performances Ibom Fest, Live music Lagos, Nigerian music festival, Ibibio music showcase, Traditional music Akwa Ibom, Fusion music Lagos, Concert Ibom Fest, Akwa Ibom artists Lagos, Music lineup Ibom Festival, Music event Lagos sept 23, Cultural music festival Lagos, Live band Ibom Fest, Music workshops Ibom Festival, Historical music Akwa Ibom, Local musicians Lagos festival, Music and dance Ibom Fest, Sound experience Lagos">
+    <meta name="description"
+        content="Experience the vibrant fusion of Akwa Ibom and Lagos culture at Ibom Fest Music Lagos. Join us for live performances, traditional music, workshops, and cultural celebrations this September 2023.">
+    <meta name="keywords"
+        content="Ibom Fest Music Lagos, Akwa Ibom Music Festival, Ibom Festival Music Lagos, Musical performances Ibom Fest, Live music Lagos, Nigerian music festival, Ibibio music showcase, Traditional music Akwa Ibom, Fusion music Lagos, Concert Ibom Fest, Akwa Ibom artists Lagos, Music lineup Ibom Festival, Music event Lagos sept 23, Cultural music festival Lagos, Live band Ibom Fest, Music workshops Ibom Festival, Historical music Akwa Ibom, Local musicians Lagos festival, Music and dance Ibom Fest, Sound experience Lagos">
     <meta name="author" content="Ibom Festival Lagos">
     <meta property="og:title" content="IBOM Festival Lagos - Cultural Music & Arts Festival">
-    <meta property="og:description" content="Experience the vibrant fusion of Akwa Ibom and Lagos culture at Ibom Fest Music Lagos. Join us for live performances, traditional music, workshops, and cultural celebrations.">
+    <meta property="og:description"
+        content="Experience the vibrant fusion of Akwa Ibom and Lagos culture at Ibom Fest Music Lagos. Join us for live performances, traditional music, workshops, and cultural celebrations.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.ibomfestivallagos.com">
     <meta property="og:image" content="./images/Logo.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="IBOM Festival Lagos - Cultural Music & Arts Festival">
-    <meta name="twitter:description" content="Experience the vibrant fusion of Akwa Ibom and Lagos culture at Ibom Fest Music Lagos. Join us for live performances and cultural celebrations.">
+    <meta name="twitter:description"
+        content="Experience the vibrant fusion of Akwa Ibom and Lagos culture at Ibom Fest Music Lagos. Join us for live performances and cultural celebrations.">
     <meta name="twitter:image" content="./images/Logo.png">
     <link rel="canonical" href="https://www.ibomfestivallagos.com">
     <link rel="stylesheet" href="style.css">
@@ -30,7 +34,7 @@
     <header>
         <div class="logo">
             <a href="#home">
-            <img src="./images/Logo.png" alt="logo">
+                <img src="./images/Logo.png" alt="logo">
             </a>
         </div>
         <div class="nav">
@@ -144,8 +148,8 @@
             <!-- <div class="img-btn"> -->
             <div class="vendor-image">
                 <img src="images/masqurade.png" alt="Traditional mask">
-            <!-- </div> -->
-            <button class="vendor-button">Get a Stand</button>
+                <!-- </div> -->
+                <button class="vendor-button">Get a Stand</button>
             </div>
         </div>
     </section>
@@ -153,21 +157,32 @@
     <!-- Gallery Section -->
     <section id="gallery" class="gallery-section">
         <h2 class="gallery-h2">Festival <span class="galrry-span">Gallery</span></h2>
-        <div class="gallery-grid">
+        <!-- <div class="gallery-grid">
             <div class="gallery-item"><img src="images/Gallery picture2.png" alt="Festival moment 1"></div>
             <div class="gallery-item"><img src="images/Gallery picture.jpg" alt="Festival moment 2"></div>
             <div class="gallery-item"><img src="images/Gallery picture2.png" alt="Festival moment 3"></div>
             <div class="gallery-item"><img src="images/Ibom Festival 2.jpg" alt="Festival moment 3"></div>
-            <!-- <div class="gallery-item"><img src="images/gallery-image3.jpg" alt="Festival moment 4"></div>
-            <div class="gallery-item"><img src="images/gallery-image4.jpg" alt="Festival moment 5"></div>
-            <div class="gallery-item"><img src="images/gallery-image5.jpg" alt="Festival moment 6"></div>
-            <div class="gallery-item"><img src="images/gallery-image6.jpg" alt="Festival moment 7"></div>
-            <div class="gallery-item"><img src="images/gallery-image.jpg" alt="Festival moment 8"></div>
-            <div class="gallery-item"><img src="images/gallery-image4.jpg" alt="Festival moment 9"></div>
-            <div class="gallery-item"><img src="images/gallery-image3.jpg" alt="Festival moment 10"></div>
-            <div class="gallery-item"><img src="images/gallery-image1.jpg" alt="Festival moment 11"></div>
-            <div class="gallery-item"><img src="images/gallery-image6.jpg" alt="Festival moment 12"></div> -->
+        </div> -->
+
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="images/Gallery picture2.png" alt="Festival moment 1" data-index="0">
+            </div>
+            <div class="gallery-item"><img src="images/Gallery picture.jpg" alt="Festival moment 2" data-index="1">
+            </div>
+            <div class="gallery-item"><img src="images/Gallery picture2.png" alt="Festival moment 3" data-index="2">
+            </div>
+            <div class="gallery-item"><img src="images/Ibom Festival 2.jpg" alt="Festival moment 4" data-index="3">
+            </div>
         </div>
+
+        <!-- Modal Structure -->
+        <div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <span class="gallery-nav gallery-left">&#10094;</span>
+  <img class="modal-content" id="modalImage">
+  <span class="gallery-nav gallery-right">&#10095;</span>
+</div>
+
     </section>
 
     <!-- Register Section -->
@@ -204,9 +219,12 @@
                 <div class="logo">Ibom Festival Lagos</div>
                 <p>Celebrating the rich cultural heritage of Akwa Ibom State in Lagos</p>
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/ibomfestival_lagos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                    <a
+                        href="https://www.instagram.com/ibomfestival_lagos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                            class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.tiktok.com/@ibom.festival_lag?_t=ZS-8yVwG9unQFl&_r=1"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.tiktok.com/@ibom.festival_lag?_t=ZS-8yVwG9unQFl&_r=1"><i
+                            class="fab fa-tiktok"></i></a>
                 </div>
             </div>
             <div class="footer-links">
@@ -235,7 +253,7 @@
     </footer>
 
     <script src="script.js"></script>
-    
+
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/+2348123456789" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp"></i>
