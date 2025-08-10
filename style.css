@@ -779,13 +779,13 @@ header {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    gap: 10px;
     justify-content: center;
     align-items: center;
 }
 
 .register-section h2 {
     font-size: 8rem;
-    margin-bottom: 40px;
     font-weight: 600;
     letter-spacing: -1px;
 }
@@ -800,13 +800,17 @@ header {
 
 .register-h2 {
     display: flex;
-    gap: 40px;
+    gap: 28px;
 }
+
+/* Tickets */
+
+
+
 
 .register-arrow img {
     position: relative;
     height: auto;
-    ;
     color: #FF8A00;
     top: 0;
     margin-bottom: 60px;
@@ -847,11 +851,11 @@ header {
 }
 
 /* Community Section */
-.community-section {
+.community-section { 
     background-color: #000;
     color: white;
     text-align: center;
-    padding: 120px 5%;
+    padding: 20px 5%;
     background-image: url('/images/Community\ bg\ without\ dark\ filter.jpg');
     background-size: cover;
     background-position: center;
@@ -881,7 +885,7 @@ header {
 
 .community-section h2 {
     font-size: 3.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 4px;
     font-weight: 700;
     letter-spacing: -0.5px;
 }
@@ -889,49 +893,93 @@ header {
 .community-section p {
     font-size: 1.2rem;
     line-height: 1.6;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     opacity: 0.9;
 }
 
-.newsletter-form {
+/* Contact form */
+.contact-form {
+    position: relative;
     display: flex;
+    flex-direction: column;
+    gap: 12px;
     max-width: 500px;
     margin: 0 auto;
-    gap: 0;
 }
 
-.newsletter-form input {
-    flex: 1;
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
     padding: 16px 24px;
     border: none;
-    border-radius: 8px 0 0 8px;
+    border-radius: 8px;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     background: rgba(255, 255, 255, 0.9);
 }
 
-.newsletter-form input::placeholder {
-    color: #666;
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
 }
 
-.newsletter-form button {
-    background-color: #FF8A00;
+/* Button style you provided */
+/* Form button (desktop floating) */
+.form-button {
+    /* position: relative; */
+    bottom: 80px;
+    right: 65px;
+}
+
+.form-btn {
+    background-color: #006400;
+    border: 2px solid #006400;
     color: white;
-    padding: 16px 32px;
-    border-radius: 0 8px 8px 0;
-    font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-    border: none;
+    padding: 14px 82px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
-.newsletter-form button:hover {
-    background-color: #FF7300;
+.form-btn:hover {
+    background-color: #FF8A00;
+    color: #000;
+    border: 2px solid #000;
 }
+
+/* Mobile styles — button stacks under inputs */
+@media (max-width: 768px) {
+    .form-button {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .form-btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .contact-form {
+        width: 100%;
+    }
+}
+
+/* #contactForm input,
+#contactForm textarea {
+    width: 100%;
+}
+
+#contactForm button {
+    width: 100%;
+} */
 
 /* Footer */
 footer {

@@ -89,11 +89,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    vendorButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            alert('Vendor registration will be available soon!');
-        });
-    });
+    // vendorButtons.forEach(button => {
+    //     button.addEventListener('click', function() {
+    //         alert('Vendor registration will be available soon!');
+    //     });
+    // });
     
     // Newsletter subscription
     const newsletterForm = document.querySelector('.newsletter-form');
@@ -308,3 +308,34 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         });
+
+
+        // JavaScript (AJAX Form Submission)
+
+      document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const status = document.getElementById('formStatus');
+    status.textContent = "Sending...";
+
+    try {
+        let response = await fetch(form.action, {
+            method: form.method,
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+            status.textContent = "✅ Your message has been sent!";
+            status.style.color = "#4CAF50";
+            form.reset();
+        } else {
+            status.textContent = "❌ Something went wrong. Please try again.";
+            status.style.color = "#FF8A00";
+        }
+    } catch (error) {
+        status.textContent = "❌ Network error. Please try again.";
+        status.style.color = "#FF8A00";
+    }
+});

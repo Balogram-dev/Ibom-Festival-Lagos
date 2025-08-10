@@ -71,7 +71,11 @@
                 music, dance, food, art, and culture happining live in Lagos</p>
             <div class="hero-buttons">
                 <button class="cta-button">Get Ticket <i class="fas fa-arrow-right"></i></button>
-                <button class="secondary-button">Get a Stand</button>
+                <!-- <button class="secondary-button" >Get a Stand</button> -->
+
+                <button class="secondary-button" onclick="window.open('https://forms.gle/kPoEK4u5ujgV21N76', '_blank')">
+    Get a Stand
+</button>
             </div>
         </div>
         <div class="hero-image">
@@ -149,7 +153,10 @@
             <div class="vendor-image">
                 <img src="images/masqurade.png" alt="Traditional mask">
                 <!-- </div> -->
-                <button class="vendor-button">Get a Stand</button>
+                <!-- <button class="vendor-button">Get a Stand</button> -->
+                 <button class="vendor-button" onclick="window.open('https://forms.gle/kPoEK4u5ujgV21N76', '_blank')">
+    Get a Stand
+</button>
             </div>
         </div>
     </section>
@@ -191,17 +198,48 @@
             <h2>REGISTER</h2>
             <h2>TODAY</h2>
         </div>
+        <div>
+            <p class="tickets">
+    <span style="color:#FF8A00; font-weight:600;">Good News!</span> Out of our two day festival, 
+    <span style="color:#006400; font-weight:600;">Day 1 tickets</span> are absolutely 
+    <span style="color:#FF8A00; font-weight:600;">FREE</span>. Come with your 
+    <span style="color:#006400; font-weight:600;">friends</span>, your energy, and let’s kick off the celebration in style!
+</p>
+        </div>
         <div class="register-arrow">
             <img src="./images/arrow Icon.svg" alt="arrow">
         </div>
         <div class="register-buttons">
             <button class="cta-button">Get Ticket</button>
-            <button class="secondary-button">Get a Stand</button>
+            <button class="secondary-button" onclick="window.open('https://forms.gle/kPoEK4u5ujgV21N76', '_blank')">
+    Get a Stand
+</button>
+        
         </div>
     </section>
 
     <!-- Community Section -->
-    <section class="community-section">
+     <section class="community-section">
+    <div class="community-content">
+        <h2>Contact Us</h2>
+        <p>Have a question about Ibom Festival? Send us a message and we’ll get back to you.</p>
+
+        <form id="contactForm" action="https://usebasin.com/f/bb54eb115107" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email Address" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <div class="form-button">
+                <button type="submit" class="form-btn">Send Message</button>
+            </div>
+
+            <p id="formStatus"></p>
+        </form>
+    </div>
+</section>
+
+    <!-- <section class="community-section">
         <div class="community-content">
             <h2>Join our community</h2>
             <p>Subscribe to our newsletter to get updates about the festival, vendors, and special announcements</p>
@@ -210,7 +248,7 @@
                 <button>Subscribe</button>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer>
@@ -240,9 +278,9 @@
                 <div class="footer-column">
                     <h3>Contact</h3>
                     <ul>
-                        <li>Email: info@ibomfest.com</li>
+                        <li>Email: info@ibomfestivallagos.com</li>
                         <li>Phone: +234 123 456 7890</li>
-                        <li>Address: Lagos, Nigeria</li>
+                        <li>Lagos, Nigeria</li>
                     </ul>
                 </div>
             </div>
