@@ -79,15 +79,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+
+
     // Register buttons functionality
-    const registerButtons = document.querySelectorAll('.cta-button');
-    const vendorButtons = document.querySelectorAll('.secondary-button, .vendor-button');
+    // const registerButtons = document.querySelectorAll('.cta-button');
+    // const vendorButtons = document.querySelectorAll('.secondary-button, .vendor-button');
     
-    registerButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            alert('Registration form will be available soon!');
-        });
-    });
+    // registerButtons.forEach(button => {
+    //     button.addEventListener('click', function() {
+    //         alert('Registration form will be available soon!');
+    //     });
+    // });
     
     // vendorButtons.forEach(button => {
     //     button.addEventListener('click', function() {

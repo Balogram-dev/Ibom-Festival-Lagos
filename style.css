@@ -851,7 +851,7 @@ header {
 }
 
 /* Community Section */
-.community-section { 
+.community-section {
     background-color: #000;
     color: white;
     text-align: center;
@@ -958,6 +958,7 @@ header {
         text-align: center;
         margin-top: 20px;
     }
+
     .form-btn {
         width: 100%;
         padding: 14px;
